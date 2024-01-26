@@ -1,0 +1,397 @@
+:root {
+  --color-black: #121212;
+  --color-white: #d1d5db;
+  --color-white-hover: #aeb2b8;
+}
+
+/* *, ::after, ::before{
+  box-sizing: border-box;
+} */
+/* * {
+  transition: all 1s;
+} */
+html {
+  background-color: var(--color-black);
+}
+body {
+  font-family: 'Rubik', sans-serif !important;
+  color: var(--color-white);
+}
+/* #app{
+    height: 100vh;
+} */
+
+.navbar {
+  background-color: var(--color-black);
+}
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+.navbar-item,
+.navbar-link {
+  font-size: 1.1rem;
+  color: var(--color-white);
+}
+
+.navbar-logo-text {
+  font-weight: bold !important;
+  font-size: 2rem;
+}
+
+.navbar-logo-text:hover {
+  color: var(--color-white) !important;
+}
+
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+  background-color: transparent !important;
+  color: var(--color-white-hover);
+}
+.is-light-transparent {
+  background-color: #0a417f;
+  border-color: transparent;
+  color: var(--color-white);
+}
+.is-dark-transparent {
+  background-color: #3d3d3d;
+  border-color: transparent;
+  color: var(--color-white);
+}
+.navbar-divider {
+  background-color: #3d3d3d;
+}
+.navbar-link:not(.is-arrowless)::after {
+  border-color: var(--color-white-hover);
+}
+.navbar-item.has-dropdown.is-active .navbar-link,
+.navbar-item.has-dropdown:focus .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link {
+  background-color: var(--color-black);
+}
+.navbar-dropdown a.navbar-item:focus,
+.navbar-dropdown a.navbar-item:hover {
+  background-color: var(--color-black) !important;
+  color: var(--color-white-hover) !important;
+}
+.navbar-item,
+.navbar-link {
+  align-items: center !important;
+  display: flex !important;
+}
+.navbar-item.is-active .navbar-dropdown,
+.navbar-item.is-hoverable:focus .navbar-dropdown,
+.navbar-item.is-hoverable:focus-within .navbar-dropdown,
+.navbar-item.is-hoverable:hover .navbar-dropdown {
+  display: block !important;
+}
+.navbar-dropdown {
+  border: 2px solid #aeb2b83a;
+  background-color: var(--color-black) !important;
+  color: var(--color-white) !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+  display: none;
+  font-size: 0.875rem;
+  right: 15px;
+  left: unset !important;
+  min-width: 250px;
+  position: absolute;
+  top: 100%;
+  z-index: 20;
+}
+.is-dark-transparent:hover {
+  color: var(--color-white) !important;
+}
+.title-hello {
+  font-size: 2.8rem;
+  padding: 7rem 0rem 2rem 0rem;
+}
+.contanier-hello > * {
+  display: block;
+}
+strong {
+  color: inherit !important;
+}
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.navbar-brand,
+.navbar-tabs {
+  display: block;
+  align-items: unset;
+  flex-shrink: unset;
+  min-height: 3.25rem;
+}
+.slot-form-wide {
+  width: 100%;
+  padding: 20px 0;
+}
+.slot-form {
+  max-width: 550px;
+  width: 550px;
+  padding: 20px 20px;
+}
+.slot-title-form {
+  padding: 2.5rem 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.slot-input-form {
+  width: 100%;
+}
+.slot-input-form > * {
+  display: block;
+}
+.slot-button-form,
+.slot-button-form-wide {
+  margin-bottom: 1rem;
+}
+.button.is-hovered,
+.button:hover {
+  border-color: #b5b5b5;
+  color: var(--color-white-hover);
+}
+.slot-button-form-wide > button,
+.slot-button-form > button,
+.slot-button-form-wide > a,
+.slot-button-form > a {
+  font-size: 1.2rem;
+}
+.slot-button-form-wide > button {
+  width: 100%;
+}
+.slot-text-other {
+  width: 100%;
+  text-align: right;
+}
+.slot-text-other > a {
+  color: var(--color-white);
+}
+.slot-text-other > a:hover,
+.slot-text-other > a:focus {
+  color: var(--color-white-hover);
+}
+.input-label {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.input-label-link {
+  color: var(--color-white-hover);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.input-short {
+  width: 100%;
+  display: block;
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.input-short:focus {
+  outline: 3px solid var(--color-white);
+}
+.input-url {
+  font-size: 1.2rem;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.app-header h3 {
+  font-size: 2rem;
+}
+.app-header button,
+.app-header a {
+  font-size: 1.1rem;
+}
+.container-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  flex-direction: column;
+}
+.container-results > i {
+  font-size: 5rem;
+}
+.container-results > p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.container-results > button,
+.container-results > a {
+  margin-top: 20px;
+}
+.progress.is-info:indeterminate {
+  background-image: linear-gradient(to right, #3e8ed0 30%, #303030 30%);
+}
+.progress:indeterminate {
+  background-color: #303030;
+}
+.loading-container {
+  text-align: center;
+  width: 400px;
+  max-width: 400px;
+}
+.is-transparent {
+  color: var(--color-white);
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-width: 0px !important;
+  border: none !important;
+}
+.dropdown-menu {
+  left: unset !important;
+  right: 0;
+}
+.dropdown-content {
+  background-color: var(--color-black);
+  border-radius: 4px;
+  padding: 0.8rem 0.5rem !important;
+  border: 1px solid #6b6c6e5e;
+  border-radius: 0.55rem;
+}
+a.dropdown-item:hover,
+button.dropdown-item:hover {
+  border-radius: 5px;
+  background-color: #6969692c;
+  color: var(--color-white);
+}
+.dropdown-item {
+  color: var(--color-white);
+}
+.dropdown-trigger .button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-color: transparent !important;
+  border-width: 0px !important;
+}
+.card {
+  box-shadow: unset;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 1px solid #6b6c6e5e;
+  border-radius: 0.55rem;
+}
+.card-content .title {
+  color: var(--color-white);
+}
+.card-content .subtitle {
+  color: var(--color-white-hover);
+}
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    background-color: var(--color-black) !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #container-app {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-dropdown {
+    right: 15px;
+    min-width: 250px;
+    left: unset;
+  }
+  #container-app {
+    padding: 0 15px;
+  }
+  .title-hello {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #292929; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 10px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+  font-weight: bold;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

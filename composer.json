@@ -1,0 +1,18 @@
+{
+    "name": "zahovic/url-shortener-php",
+    "autoload": {
+        "psr-4": {
+            "UrlShortenerPhp\\": "src/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zahovic Saravia Suarez",
+            "email": "zv.elrevelde@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
